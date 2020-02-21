@@ -28,7 +28,7 @@ class Library:
         self.signup_time = signup_time
         self.shiping_rate = shiping_rate
         self.books = books      # a collection of Book objects
-        self.score = get_score(self)
+        # self.score = get_score(self)
 
 class Book:
     def __init__(self, id, score):
@@ -110,25 +110,3 @@ def build_universe(filename):
 #         print()
     
 #=================
-
-def get_score(library):
-    sum = 0
-    for b in library.books:
-        sum += b.score
-
-    return sum
-
-def libraries_order(libraries):
-    ls = sorted(libraries, key=operator.attrgetter('score'))
-    return ls
-
-def print_list(libraries):
-    print(len(libraries))
-    for l in libraries:
-        print($)
-    for l in libraries:
-        for b in l.books:
-            print(b.id)
-
-
-libraries_order(build_universe("given_files/" + "a_example.txt").libraries)

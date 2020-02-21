@@ -1,0 +1,18 @@
+first work with books being equal price.
+        
+for each (reached lib)
+    for each book
+        find the set of libs that have that book
+        send best book
+
+
+
+for each lib that can be reached
+    get best lib
+
+if two libs can be reached
+get best two libs
+
+
+Take maximum book for first step then optimize with selection based on list
+
